@@ -15,13 +15,6 @@ export const headerData = {
       href: getPermalink("/#faq"),
     },
   ],
-  actions: [
-    {
-      type: "button",
-      text: "Download",
-      href: "https://github.com/onwidget/astrowind",
-    },
-  ],
 }
 
 export const footerData = {
