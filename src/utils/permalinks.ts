@@ -20,7 +20,9 @@ export const cleanSlug = (text = "") =>
     .map((slug) => slugify(slug))
     .join("/")
 
-export const POST_PERMALINK_PATTERN = trimSlash(BLOG?.post?.permalink || "/%slug%")
+export const POST_PERMALINK_PATTERN = trimSlash(
+  BLOG?.post?.permalink || "/%slug%",
+)
 
 export const BLOG_BASE = cleanSlug(BLOG?.list?.pathname)
 export const CATEGORY_BASE = cleanSlug(BLOG?.category?.pathname || "category")
@@ -78,4 +80,5 @@ export const getAsset = (path: string): string =>
     .join("/")
 
 /** */
-const definitivePermalink = (permalink: string): string => createPath(BASE_PATHNAME, permalink)
+const definitivePermalink = (permalink: string): string =>
+  createPath(BASE_PATHNAME, permalink)

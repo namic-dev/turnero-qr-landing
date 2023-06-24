@@ -1,25 +1,25 @@
 ---
-import { Icon } from 'astro-icon';
+import { Icon } from "astro-icon"
 
 interface Item {
-  title: string;
-  description: string;
-  icon?: string;
+  title: string
+  description: string
+  icon?: string
 }
 
 export interface Props {
-  title?: string;
-  subtitle?: string;
-  highlight?: string;
-  items: Array<Array<Item>>;
+  title?: string
+  subtitle?: string
+  highlight?: string
+  items: Array<Array<Item>>
 }
 
 const {
-  title = await Astro.slots.render('title'),
-  subtitle = await Astro.slots.render('subtitle'),
+  title = await Astro.slots.render("title"),
+  subtitle = await Astro.slots.render("subtitle"),
   highlight,
   items = [],
-} = Astro.props;
+} = Astro.props
 ---
 
 <section class="scroll-mt-16" id="features">
@@ -41,7 +41,10 @@ const {
           )}
 
           {subtitle && (
-            <p class="max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-slate-400" set:html={subtitle} />
+            <p
+              class="max-w-3xl mx-auto sm:text-center text-xl text-muted dark:text-slate-400"
+              set:html={subtitle}
+            />
           )}
         </div>
       )
@@ -54,12 +57,17 @@ const {
               <div class="flex flex-row max-w-md">
                 <div class="mb-4 mr-4">
                   <div class="flex items-center justify-center w-12 h-12 rounded-full bg-primary dark:bg-blue-700">
-                    {icon && <Icon name={icon} class="w-6 h-6 text-white icon-light" />}
+                    {icon && (
+                      <Icon name={icon} class="w-6 h-6 text-white icon-light" />
+                    )}
                   </div>
                 </div>
                 <div>
                   <h3 class="mb-3 text-xl font-bold">{title}</h3>
-                  <p class="text-muted dark:text-slate-400" set:html={description} />
+                  <p
+                    class="text-muted dark:text-slate-400"
+                    set:html={description}
+                  />
                 </div>
               </div>
             ))}
