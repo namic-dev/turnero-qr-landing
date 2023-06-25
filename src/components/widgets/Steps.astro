@@ -21,7 +21,10 @@ const {
 } = Astro.props
 ---
 
-<section class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-6xl">
+<section
+  class="px-4 py-16 sm:px-6 mx-auto lg:px-8 lg:py-20 max-w-6xl"
+  id="proceso"
+>
   <div class="grid gap-6 row-gap-10 md:grid-cols-2">
     <div class="md:py-4 md:pr-16 mb-4 md:mb-0">
       {
@@ -84,7 +87,7 @@ const {
             <Fragment set:html={image} />
           ) : (
             <Picture
-              class="inset-0 object-cover object-top w-full rounded-md shadow-lg md:absolute md:h-full bg-gray-400 dark:bg-slate-700"
+              class="inset-0 object-cover object-buttom w-full rounded-md shadow-lg md:absolute md:h-full bg-gray-400 dark:bg-slate-700"
               widths={[400, 768]}
               sizes="(max-width: 768px) 100vw, 432px"
               aspectRatio="432:768"

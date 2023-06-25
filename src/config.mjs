@@ -1,21 +1,20 @@
 import defaultImage from "./assets/images/default.png"
 
 const CONFIG = {
-  name: "AstroWind",
+  name: "Fila QR",
 
   origin: "https://astrowind.vercel.app",
   basePathname: "/",
   trailingSlash: false,
 
-  title:
-    "AstroWind — Free template for create a website with Astro + Tailwind CSS",
+  title: "Fila QR",
   description:
-    "🚀 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs.",
+    "Regístrate, espera y recibe notificaciones de tu turno desde tu dispositivo móvil. Optimiza tu tiempo y evita largas filas físicas.",
   defaultImage: defaultImage,
 
-  defaultTheme: "system", // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
+  defaultTheme: "light:only", // Values: "system" | "light" | "dark" | "light:only" | "dark:only"
 
-  language: "en",
+  language: "es",
   textDirection: "ltr",
 
   dateFormatter: new Intl.DateTimeFormat("en", {
