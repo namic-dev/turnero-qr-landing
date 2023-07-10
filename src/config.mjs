@@ -3,8 +3,8 @@ import defaultImage from "./assets/images/default.png"
 const CONFIG = {
   name: "Fila QR",
 
-  origin: "https://namic-dev.github.io",
-  basePathname: "/turnero-qr-landing",
+  origin: "https://desfil.ar",
+  basePathname: "/",
   trailingSlash: false,
 
   title: "Fila QR",
